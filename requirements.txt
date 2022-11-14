@@ -2,5 +2,5 @@ glfw
 PyOpenGL
 PyOpenGL_accelerate
 numpy
-Pyrr
-Pillow
+pyrr
+pillow
