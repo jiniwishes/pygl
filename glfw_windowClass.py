@@ -5,6 +5,7 @@ class Window:
     def __init__(self, width:int, height:int, title: str):
         if not glfw.init():
             raise Exception("glfw can not be initialized.")
+        
         self._win = glfw.create_window(width, height, title, None, None)
 
         if not self._win:
@@ -13,7 +14,6 @@ class Window:
 
         glfw.set_window_pos(self._win, 400, 200)
         glfw.make_context_current(self._win)
-    
 
     def main_loop(self):
         while not glfw.window_should_close(self._win):

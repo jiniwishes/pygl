@@ -1,0 +1,1 @@
+typedef void (*GL_GENBUFFERS) (GLsizei, GLuint*);
